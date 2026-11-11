@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- EDIT: page title and description (shown in browser tabs, search results and link previews) -->
+  <title>EVOLVE 4.0 — The Championship | Register</title>
+  <meta name="description" content="EVOLVE 4.0: The Championship. A Formula 1 themed business competition by the Strategic Human Resource Society, IoBM. 28–29 November 2026, Karachi. Prize pool of up to Rs 100,000. Register your team of four.">
+  <meta name="theme-color" content="#070405">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/barlow-condensed-latin-700-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<!-- EDIT: data-event-start is the moment the countdown ends.
+     Format: YYYY-MM-DDTHH:MM:SS+HH:MM  (+05:00 is Pakistan time). Set the real start time when you have it. -->
+<body data-event-start="2026-11-28T09:00:00+05:00">
+
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="page" id="page">
+
+    <header class="topbar">
+      <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true"></span>EVOLVE 4.0</a>
+      <nav class="topbar__nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#modules">Modules</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--small" href="#register">Register</a>
+    </header>
+
+    <main>
+
+      <!-- ============ 1. COUNTDOWN ============ -->
+      <section class="hero" id="top" data-shot="hero">
+        <div class="hero__inner">
+          <div class="lights" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <p class="eyebrow">28–29 November 2026 · IoBM, Karachi</p>
+          <h1 class="hero__title">EVOLVE<span class="hero__ver">4.0</span></h1>
+          <p class="hero__sub">The Championship</p>
+          <p class="hero__tag">Onwards and beyond.</p>
+
+          <div class="countdown" id="countdown" role="timer" aria-label="Time until the event starts">
+            <div class="countdown__cell"><span class="countdown__num" data-unit="days">--</span><span class="countdown__label">Days</span></div>
+            <div class="countdown__cell"><span class="countdown__num" data-unit="hours">--</span><span class="countdown__label">Hours</span></div>
+            <div class="countdown__cell"><span class="countdown__num" data-unit="minutes">--</span><span class="countdown__label">Minutes</span></div>
+          </div>
+          <p class="countdown__done" id="countdown-done" hidden>Lights out. The championship is underway.</p>
+
+          <a class="btn" href="#register">Register your team</a>
+        </div>
+        <a class="scrollcue" href="#about" aria-label="Scroll to introduction"><span></span>Scroll</a>
+      </section>
+
+      <!-- ============ 2. INTRODUCTION ============ -->
+      <section class="intro" id="about" data-shot="intro">
+        <div class="intro__inner reveal">
+          <p class="eyebrow">The race weekend</p>
+          <h2>Five modules. One championship.</h2>
+          <p class="lead">EVOLVE 4.0 puts your team in charge of a Formula 1 racing company. Over two days you invest, build a brand, race real karts, lead through a race-day crisis and bid at a live auction.</p>
+          <p>The money and points you earn carry from one game to the next, so every decision counts. The team with the best results across all five modules takes the championship. Brought to you by the Strategic Human Resource Society, IoBM.</p>
+          <ul class="stats">
+            <li><strong>05</strong><span>Modules</span></li>
+            <li><strong><small>Up to Rs</small>100K</strong><span>Prize pool</span></li>
+            <li><strong>~20</strong><span>Grid slots</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ 3. MODULES ============
+           To add a module: copy one whole <article class="module"> block AND its matching
+           <aside class="panel"> block near the bottom of this file. Give both the same new id
+           (e.g. data-panel="module-5" on the button and id="module-5" on the panel).
+           Module days are deliberately not shown (the schedule may change). -->
+      <section class="modules" id="modules" data-shot="modules">
+        <div class="modules__head reveal">
+          <p class="eyebrow">The race weekend</p>
+          <h2>Modules</h2>
+          <p class="hint">Five modules across 28 and 29 November. Module days are subject to change.</p>
+          <p class="hint"><span class="hint__touch">Swipe a module left</span><span class="hint__mouse">Open a module</span> for full details.</p>
+        </div>
+
+        <article class="module reveal" data-panel="module-1">
+          <span class="module__no" aria-hidden="true">01</span>
+          <div class="module__body">
+            <p class="module__when">About 60 min</p>
+            <h3>Investify: The Pit Wall</h3>
+            <p>Grow Rs 100,000 of play money by buying, insuring and trading assets, then survive the surprise cards.</p>
+          </div>
+          <button class="module__more" type="button" data-panel="module-1">Details<span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="module reveal" data-panel="module-2">
+          <span class="module__no" aria-hidden="true">02</span>
+          <div class="module__body">
+            <p class="module__when">About 60 min</p>
+            <h3>The Media Paddock</h3>
+            <p>Make a video ad, pitch a sponsor, then face the press when a crisis hits your team.</p>
+          </div>
+          <button class="module__more" type="button" data-panel="module-2">Details<span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="module reveal" data-panel="module-3">
+          <span class="module__no" aria-hidden="true">03</span>
+          <div class="module__body">
+            <p class="module__when">45–55 min</p>
+            <h3>The Leadership Grid</h3>
+            <p>Twenty minutes to race start, an engine part fails. Make a fast, safe call and lead your team through it.</p>
+          </div>
+          <button class="module__more" type="button" data-panel="module-3">Details<span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="module reveal" data-panel="module-4">
+          <span class="module__no" aria-hidden="true">04</span>
+          <div class="module__body">
+            <p class="module__when">35–45 min</p>
+            <h3>The Paddock Exchange</h3>
+            <p>A live auction of 25 F1 items with hidden point values. Every bid comes out of your team&#39;s wallet.</p>
+          </div>
+          <button class="module__more" type="button" data-panel="module-4">Details<span aria-hidden="true">→</span></button>
+        </article>
+        <article class="module reveal" data-panel="module-5">
+          <span class="module__no" aria-hidden="true">05</span>
+          <div class="module__body">
+            <p class="module__when">About 2–2.5 hours</p>
+            <h3>The Grand Prix</h3>
+            <p>Real karts on a real track. One driver from each team races through qualifying to the final, and the podium earns prize money for the team.</p>
+          </div>
+          <button class="module__more" type="button" data-panel="module-5">Details<span aria-hidden="true">→</span></button>
+        </article>
+      </section>
+
+      <!-- ============ 4. REGISTRATION ============ -->
+      <section class="register" id="register" data-shot="register">
+        <div class="register__inner reveal">
+          <p class="eyebrow">Grid slots are limited</p>
+          <h2>Take your place on the grid</h2>
+          <p class="lead">Teams of four. Around 20 teams will race for a prize pool of up to Rs 100,000 on 28–29 November at IoBM.</p>
+          <a class="btn btn--big" href="https://docs.google.com/forms/d/e/1FAIpQLSdQ--g0Q9lfVFrB8r1CjpbaIyViBD2O8J-vzni3lG_d-NNlRA/viewform" target="_blank" rel="noopener noreferrer">Register now<span class="sr-only"> (opens Google Forms in a new tab)</span></a>        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ 5. CONTACT ============ -->
+    <footer class="footer" id="contact" data-shot="footer">
+      <div class="footer__grid">
+        <div>
+          <p class="eyebrow">Contact us</p>
+          <h2>Questions before you enter?</h2>
+          <p>Message us on Instagram or email the team at the Strategic Human Resource Society, IoBM.</p>
+        </div>
+        <ul class="contacts">
+          <li><span>Email</span><a href="mailto:shrspeopleandculture.iobm@gmail.com">shrspeopleandculture.iobm@gmail.com</a></li>
+          <li><span>Email</span><a href="mailto:shrsiobm2006@gmail.com">shrsiobm2006@gmail.com</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/shrsiobm/" target="_blank" rel="noopener noreferrer">@shrsiobm</a></li>
+          <li><span>Venue</span><span class="contacts__text">IoBM University, Korangi Creek, Karachi</span></li>
+        </ul>
+      </div>
+      <div class="footer__base">
+        <p>© <span id="year">2026</span> EVOLVE 4.0 by the Strategic Human Resource Society, IoBM. An independent student event, not affiliated with Formula 1, Ferrari or any racing team.</p>
+        <p>3D car: “Ferrari F1 2019” by <a href="https://sketchfab.com/valvetin" target="_blank" rel="noopener noreferrer">valvetin</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>, simplified for the web.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ============ MODULE DETAIL PAGES ============
+       One panel per module. The id must match the module's data-panel value above. -->
+
+  <aside class="panel" id="module-1" role="dialog" aria-modal="true" aria-labelledby="module-1-title" inert>
+    <div class="panel__inner">
+      <button class="panel__back" type="button" data-close><span aria-hidden="true">←</span> Back to modules</button>
+      <p class="eyebrow">Module 01 · Investify</p>
+      <h2 id="module-1-title">The Pit Wall</h2>
+      <dl class="facts">
+        <div><dt>Duration</dt><dd>~60 min</dd></div>
+        <div><dt>Rounds</dt><dd>5</dd></div>
+        <div><dt>Budget</dt><dd>Rs 100,000</dd></div>
+        <div><dt>Team</dt><dd>4 players</dd></div>
+      </dl>
+      <h3>Overview</h3>
+      <p>Your team sits on the pit wall of a struggling racing company with Rs 100,000 of play money. Buy assets that could be worth more later, protect them, strike deals with rival teams, then ride out the surprises. The team whose money grows the most wins.</p>
+      <h3>Format</h3>
+      <ul>
+        <li><strong>Buy:</strong> a Safe Pick, a Risky Pick and a Fixer-Upper, and lock away emergency cash.</li>
+        <li><strong>Protect:</strong> buy crash insurance or a secret report on the surprise cards.</li>
+        <li><strong>Trade:</strong> sell, swap or team up with other teams, up to three deals.</li>
+        <li><strong>Surprises:</strong> three cards such as Market Boom or Supply Chain Collapse change what everything is worth.</li>
+        <li><strong>Count up:</strong> final money against Rs 100,000 gives your growth score.</li>
+      </ul>
+      <h3>Team roles</h3>
+      <p>Lead Investor, Treasurer, Risk Officer and Dealmaker.</p>
+      <h3>Judging</h3>
+      <p>Highest growth on Rs 100,000 wins, and the Board announces the top three. Cash you keep earns a 5% bonus, so saving is a strategy, not a waste.</p>
+      <a class="btn" href="#register" data-close-to="register">Register for the event</a>
+    </div>
+  </aside>
+
+  <aside class="panel" id="module-2" role="dialog" aria-modal="true" aria-labelledby="module-2-title" inert>
+    <div class="panel__inner">
+      <button class="panel__back" type="button" data-close><span aria-hidden="true">←</span> Back to modules</button>
+      <p class="eyebrow">Module 02 · Brand and Media</p>
+      <h2 id="module-2-title">The Media Paddock</h2>
+      <dl class="facts">
+        <div><dt>Duration</dt><dd>~60 min</dd></div>
+        <div><dt>Team</dt><dd>4 players</dd></div>
+        <div><dt>Games</dt><dd>2</dd></div>
+        <div><dt>Points</dt><dd>200</dd></div>
+      </dl>
+      <h3>Overview</h3>
+      <p>The business side of Formula 1. Build your racing company's brand, win over a sponsor and protect your reputation when the spotlight turns hostile. Build the brand. Win the sponsor. Survive the spotlight.</p>
+      <h3>Game 1: The Sponsor Lap</h3>
+      <ul>
+        <li>Draw a target audience, an advertising challenge and a brand constraint.</li>
+        <li>Create an edited video ad for your racing company that features the EVOLVE 4.0 sponsor.</li>
+        <li>Screen it (up to 2 min), explain your campaign, then give a 1-minute sponsor pitch.</li>
+      </ul>
+      <h3>Game 2: The Press Conference</h3>
+      <ul>
+        <li>Receive a surprise crisis and get 5 minutes to prepare.</li>
+        <li>Deliver a 30-second official statement.</li>
+        <li>Take 2–3 minutes of questions from judges playing journalists and stakeholders, then close with your action plan.</li>
+      </ul>
+      <h3>Judging</h3>
+      <p>Each game is scored out of 100 on audience understanding, creativity, sponsor value, clarity under pressure and teamwork. Ties go to the higher Press Conference score. The sponsor also secretly picks one team as its partner, revealed with a bonus at the closing ceremony.</p>
+      <a class="btn" href="#register" data-close-to="register">Register for the event</a>
+    </div>
+  </aside>
+
+  <aside class="panel" id="module-3" role="dialog" aria-modal="true" aria-labelledby="module-3-title" inert>
+    <div class="panel__inner">
+      <button class="panel__back" type="button" data-close><span aria-hidden="true">←</span> Back to modules</button>
+      <p class="eyebrow">Module 03 · Leadership and Development</p>
+      <h2 id="module-3-title">The Leadership Grid</h2>
+      <dl class="facts">
+        <div><dt>Duration</dt><dd>45–55 min</dd></div>
+        <div><dt>Roles</dt><dd>4</dd></div>
+        <div><dt>Format</dt><dd>Simulation</dd></div>
+        <div><dt>Points</dt><dd>20</dd></div>
+      </dl>
+      <h3>Overview</h3>
+      <p>Twenty minutes before the race, a critical engine part fails its safety check and the approved replacement is late. Your team is the leadership group that has to decide what happens next, without ever compromising safety.</p>
+      <h3>Format</h3>
+      <ul>
+        <li><strong>Briefing:</strong> learn the scenario and take your roles.</li>
+        <li><strong>First call:</strong> discuss and submit one decision.</li>
+        <li><strong>Race Control update:</strong> bad weather brings the start forward. Adapt.</li>
+        <li><strong>Final call:</strong> your decision, three actions and who owns each.</li>
+        <li><strong>Debrief:</strong> explain your choices and hear the judges' feedback.</li>
+      </ul>
+      <h3>Team roles</h3>
+      <p>Team Principal, Finance Director, Operations Director and Communications Director.</p>
+      <h3>Judging</h3>
+      <p>Scored out of 20: decision-making, teamwork, adaptability, and accountability and execution, each from 0 to 5.</p>
+      <a class="btn" href="#register" data-close-to="register">Register for the event</a>
+    </div>
+  </aside>
+
+  <aside class="panel" id="module-4" role="dialog" aria-modal="true" aria-labelledby="module-4-title" inert>
+    <div class="panel__inner">
+      <button class="panel__back" type="button" data-close><span aria-hidden="true">←</span> Back to modules</button>
+      <p class="eyebrow">Module 04 · Team Building</p>
+      <h2 id="module-4-title">The Paddock Exchange</h2>
+      <dl class="facts">
+        <div><dt>Duration</dt><dd>35–45 min</dd></div>
+        <div><dt>Tiers</dt><dd>4</dd></div>
+        <div><dt>Lots</dt><dd>25 items</dd></div>
+        <div><dt>Max wins</dt><dd>4 a team</dd></div>
+      </dl>
+      <h3>Overview</h3>
+      <p>A live auction of 25 F1-themed items: helmets, model cars, trophies and more. You bid from your team&#39;s wallet, which carries across the whole championship, and every item hides a point value revealed only after the hammer falls.</p>
+      <h3>Format</h3>
+      <ul>
+        <li>Items go up one by one, with 30 seconds to act on each lot.</li>
+        <li>Once your team wins four items, you stop bidding.</li>
+        <li>A different teammate holds the paddle after every win.</li>
+        <li>Hidden tiers: Common 10–25, Rare 30–55, Epic 60–85, Legendary 90–120 points.</li>
+      </ul>
+      <h3>Judging</h3>
+      <p>Most points wins. 1st earns 25 championship points, 2nd 21 and 3rd 18, down to 1 point for 16th–20th. On a tie, the team with more budget left ranks higher.</p>
+      <a class="btn" href="#register" data-close-to="register">Register for the event</a>
+    </div>
+  </aside>
+
+  <!-- EDIT: venue and partner for The Grand Prix are still proposals in the draft, so neither is named here yet. -->
+  <aside class="panel" id="module-5" role="dialog" aria-modal="true" aria-labelledby="module-5-title" inert>
+    <div class="panel__inner">
+      <button class="panel__back" type="button" data-close><span aria-hidden="true">←</span> Back to modules</button>
+      <p class="eyebrow">Module 05 · Karting</p>
+      <h2 id="module-5-title">The Grand Prix</h2>
+      <dl class="facts">
+        <div><dt>Duration</dt><dd>2–2.5 hrs</dd></div>
+        <div><dt>Racers</dt><dd>1 a team</dd></div>
+        <div><dt>Format</dt><dd>Heats + final</dd></div>
+        <div><dt>Prizes</dt><dd>Top 3</dd></div>
+      </dl>
+      <h3>Overview</h3>
+      <p>The Formula 1 theme leaves the room and hits the track. Each team sends one representative to a live karting challenge, racing through timed qualifying heats and a final for the highest finishing position.</p>
+      <h3>Format</h3>
+      <ul>
+        <li><strong>Nomination:</strong> each team names one driver before the event. Drivers must meet the track&#39;s eligibility and safety requirements.</li>
+        <li><strong>Briefing:</strong> a mandatory safety and race briefing covers the track, rules, penalties and the race format.</li>
+        <li><strong>Qualifying:</strong> drivers race in groups in timed sessions, and the fastest lap times go through to the final.</li>
+        <li><strong>The final:</strong> the fastest qualifiers race for the podium.</li>
+        <li><strong>Podium:</strong> the top three are announced and recognised on a podium.</li>
+      </ul>
+      <h3>Judging</h3>
+      <p>Official finishing positions, verified by the track&#39;s race officials, decide 1st, 2nd and 3rd. The top three drivers earn prize money that goes straight into their team&#39;s virtual wallet for the rest of the championship.</p>
+      <a class="btn" href="#register" data-close-to="register">Register for the event</a>
+    </div>
+  </aside>
+
+</body>
+</html>
