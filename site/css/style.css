@@ -282,6 +282,7 @@ p { color: var(--muted); }
 .panel__back:hover span { transform: translateX(-6px); }
 .panel h2 { margin-bottom: 2rem; }
 .panel h3 { margin: 2.2rem 0 .7rem; font-size: 1.35rem; letter-spacing: .06em; color: #fff; }
+.panel p + p { margin-top: .9rem; }
 .panel ul { display: grid; gap: .5rem; }
 .panel li { position: relative; padding-left: 1.4rem; color: var(--muted); }
 .panel li::before { content: ""; position: absolute; left: 0; top: .7em; width: 10px; height: 2px; background: var(--red-hot); }
